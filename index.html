@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airplane Crashes Visualization</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="controls">
+    <label for="year">Select Year:</label>
+    <select id="year"></select>
+    <br>
+    <label for="operator">Select Operator:</label>
+    <select id="operator"></select>
+    <br>
+    <label for="chart-type">Select Chart Type:</label>
+    <select id="chart-type">
+      <option value="bar">Bar Chart</option>
+      <option value="pie">Pie Chart</option>
+    </select>
+    <br>
+    <button onclick="updateVisualization()">Show Visualization</button>
+  </div>
+  <div id="chart"></div>
+  <script src="d3.v5.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
